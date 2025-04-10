@@ -17,8 +17,8 @@ dotenv.config();
 
 cloudinary.config({
     cloud_name: "dkq1bhw3m",
-    api_key: "292422193956644",
-    api_secret: "Y6qDcfqhc3wH2wiPG3sHjAeMRVE"
+    api_key: "",
+    api_secret: ""
 });
 /*const uploadOnCloudinary = async (localFilePath) => {
     try {
