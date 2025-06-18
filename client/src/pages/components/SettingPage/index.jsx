@@ -48,7 +48,7 @@ const SettingsPage = () => {
           // Add other headers as needed
         },
       };
-      const response  = await axios.delete("http://localhost:5000/api/v1/users/account/delete",config)
+      const response  = await axios.delete("https://short-url-generator-ficq.onrender.com/api/v1/users/account/delete",config)
       console.log(response)
       if(response.data.success){
         window.location.href = '/user/login'
@@ -70,7 +70,7 @@ const SettingsPage = () => {
       },
     };
     try {
-      const response = await axios.patch('http://localhost:5000/api/v1/users/change-account-details', accountDetails, config)
+      const response = await axios.patch('https://short-url-generator-ficq.onrender.com/api/v1/users/change-account-details', accountDetails, config)
       console.log(response)
 
       if (response.data.success) {
@@ -104,7 +104,7 @@ const SettingsPage = () => {
       },
     };
     try {
-      const response = await axios.patch('http://localhost:5000/api/v1/users/change-password', passwordForm, config)
+      const response = await axios.patch('https://short-url-generator-ficq.onrender.com/api/v1/users/change-password', passwordForm, config)
       console.log(response)
       console.log('Resetting password:', passwordForm);
       if (response.data.success) {
