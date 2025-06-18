@@ -9,7 +9,7 @@ const Redirector = () => {
         // Fetch the original URL from your server based on the short URL
         // Replace 'https://your-api-endpoint.com/short-url/' with your actual API endpoint
         try {
-            const response = await axios.get(`http://localhost:5000/api/v1/urls/short-url/${shortUrl}`)
+            const response = await axios.get(`https://short-url-generator-ficq.onrender.com/api/v1/urls/short-url/${shortUrl}`)
             const { redirectUrl } = response?.data?.data
             if(redirectUrl)
             {
