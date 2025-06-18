@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Sidebar from '../components/Sidebar';
 import axios from 'axios';
 
 const ContactUs = () => {
@@ -46,7 +45,6 @@ const ContactUs = () => {
 
   return (
     <div className="flex min-h-screen bg-gradient-to-br from-blue-100 to-gray-200">
-      <Sidebar />
       <div className="flex flex-1 items-center justify-center">
         <div className="w-full max-w-lg bg-white p-8 rounded-2xl shadow-2xl transform transition duration-300 hover:scale-105">
           <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Contact Us</h1>
