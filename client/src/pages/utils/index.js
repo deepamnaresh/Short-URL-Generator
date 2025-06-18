@@ -11,7 +11,7 @@ const config = {
 
   const getCookie = async (name)=> {
     try {
-      const response = await axios.get('http://localhost:5000/api/v1/users/get-cookie',config)
+      const response = await axios.get('https://short-url-generator-ficq.onrender.com/api/v1/users/get-cookie',config)
 
       if(response.data.success){
         const {accessToken,refreshToken} = response.data.data
