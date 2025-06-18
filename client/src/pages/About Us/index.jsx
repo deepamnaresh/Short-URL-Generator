@@ -8,7 +8,7 @@ const About = () => {
                 <Sidebar/>
             </div>
             <div className='w-full h-screen bg-white text-black text-2xl'> 
-            About us
+                <AboutUs/>
             </div>
         </div>
     )
