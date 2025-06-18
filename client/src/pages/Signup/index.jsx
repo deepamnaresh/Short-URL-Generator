@@ -38,7 +38,7 @@ const SignUpForm = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/v1/users/register', formData);
+      const response = await axios.post('https://short-url-generator-ficq.onrender.com/api/v1/users/register', formData);
       console.log('Signup successful:', response.data);
 
       // Redirect to login page after success
