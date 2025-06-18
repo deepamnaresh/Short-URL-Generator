@@ -28,7 +28,7 @@ const ContactUs = () => {
     setSubmitted(false);
   
     try {
-      const response = await axios.post("http://localhost:5000/api/v1/users/contact", formData,{withCredentials:true});
+      const response = await axios.post("https://short-url-generator-ficq.onrender.com/api/v1/users/contact", formData,{withCredentials:true});
       console.log(response);
       if (response.data.success) {
         setSubmitted(true);
