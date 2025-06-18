@@ -1,5 +1,6 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar'
+import AboutUs from './AboutUs'
 
 const About = () => {
     return (
