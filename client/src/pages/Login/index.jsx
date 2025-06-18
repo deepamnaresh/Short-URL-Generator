@@ -33,7 +33,7 @@ const LoginForm = () => {
     setError(null)
     setLoading(true)
     try {
-      const response = await axios.post("http://localhost:5000/api/v1/users/login", loginData,{withCredentials:true})
+      const response = await axios.post("https://short-url-generator-ficq.onrender.com/api/v1/users/login", loginData,{withCredentials:true})
       console.log(response)
       const { user, refreshToken, accessToken } = response.data.data
       console.log(refreshToken, " ", accessToken, " ", user)
