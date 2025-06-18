@@ -21,7 +21,7 @@ const AccountDetails = () => {
     const [isLogin,setIsLogIn] = useState(false)
     const handleLogOut = async ()=>{
       try {
-        const response  = await axios.post('http://localhost:5000/api/v1/users/logout',{},config)
+        const response  = await axios.post('https://short-url-generator-ficq.onrender.com/api/v1/users/logout',{},config)
         if(response.data.success){
           console.log(response.data.message)
           setIsLogIn(false)
@@ -38,7 +38,7 @@ const AccountDetails = () => {
         (async () => {  
             try {
                 setIsLogIn(await getCookie("accessToken"))
-                const response = await axios.get(`http://localhost:5000/api/v1/users/get-current-user`,config)
+                const response = await axios.get(`https://short-url-generator-ficq.onrender.com/api/v1/users/get-current-user`,config)
                 // console.log(response)
                 const user = response?.data?.data
                 if(response.data.success)
