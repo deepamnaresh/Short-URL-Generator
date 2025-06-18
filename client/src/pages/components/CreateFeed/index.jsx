@@ -31,7 +31,7 @@ const CreateFeed = () => {
           // Add other headers as needed
         },
       };
-      const response = await axios.post('http://localhost:5000/api/v1/urls/generate-url', { url: originalUrl }, config)
+      const response = await axios.post('https://short-url-generator-ficq.onrender.com/api/v1/urls/generate-url', { url: originalUrl }, config)
       console.log(response.data)
       const { data } = response.data
       console.log(response.data.message)
@@ -147,7 +147,7 @@ const CreateFeed = () => {
           'Authorization': `Bearer ${localStorage.getItem('accessToken')}`,
         },
       };
-      const response = await axios.post('http://localhost:5000/api/v1/urls/generate-url', { url: originalUrl }, config);
+      const response = await axios.post('https://short-url-generator-ficq.onrender.com/api/v1/urls/generate-url', { url: originalUrl }, config);
       
       const { data } = response.data;
       if (response.data.success) {
@@ -173,7 +173,7 @@ const CreateFeed = () => {
           'Authorization': `Bearer ${localStorage.getItem('accessToken')}`,
         },
       };
-      const response = await axios.get(`http://localhost:5000/api/v1/urls/analytics/${shortUrl}`, config);
+      const response = await axios.get(`https://short-url-generator-ficq.onrender.com/api/v1/urls/analytics/${shortUrl}`, config);
       
       // ✅ FIX: Handle array or object response correctly
       const fetchedData = response.data.data;
